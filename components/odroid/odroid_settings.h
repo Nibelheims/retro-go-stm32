@@ -16,6 +16,13 @@ typedef enum
     ODROID_REGION_PAL
 } ODROID_REGION;
 
+typedef enum
+{
+    ODROID_SOUND_PROFILE_VERY_LOW = 0,
+    ODROID_SOUND_PROFILE_LOW,
+    ODROID_SOUND_PROFILE_NORMAL
+} ODROID_SOUND_PROFILE;
+
 void odroid_settings_init(void);
 void odroid_settings_reset(void);
 void odroid_settings_commit(void);
@@ -25,6 +32,9 @@ void odroid_settings_FontSize_set(int32_t);
 
 int32_t odroid_settings_Volume_get();
 void odroid_settings_Volume_set(int32_t value);
+
+int32_t odroid_settings_SoundProfile_get();
+void odroid_settings_SoundProfile_set(int32_t value);
 
 char* odroid_settings_RomFilePath_get();
 void odroid_settings_RomFilePath_set(const char* value);
