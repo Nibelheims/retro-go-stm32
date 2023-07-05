@@ -152,7 +152,7 @@
 #define C_GW_OPAQUE_YELLOW             0x5A02
 
 #if GNW_TARGET_ZELDA != 0
-    #define C_GW_MAIN_COLOR            C_DARK_GREEN
-#else 
-    #define C_GW_MAIN_COLOR            C_GW_RED
+    #define C_GW_MAIN_COLOR_DEFAULT    C_DARK_GREEN
+#else
+    #define C_GW_MAIN_COLOR_DEFAULT    C_GW_RED
 #endif /* GNW_TARGET_ZELDA */
